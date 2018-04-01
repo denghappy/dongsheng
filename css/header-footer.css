@@ -1,0 +1,193 @@
+/*导航开始*/
+#nav{
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    overflow: hidden;
+}
+#nav .navbar{
+    width: 1020px;
+    margin: 0 auto;
+}
+#nav .navbar .logo{
+    display: block;
+    width: 145px;
+    height: 80px;
+    float: left;
+    margin-top: 23px;
+    margin-right: 35px;
+}
+#nav .navbar ul{
+}
+#nav .navbar ul li{
+    float: left;
+}
+#nav .navbar ul li a{
+    display: block;
+    width: 120px;
+    height: 80px;
+    color: #fff;
+    font-size: 14px;
+    line-height:80px;
+    text-align: center;
+}
+#nav .navbar ul li:hover{
+    background-color: #01A72B;
+}
+.current{
+    background-color: #01A72B;
+}
+
+
+/*导航结束*/
+
+
+/*品牌质量开始*/
+#brand{
+    width: 100%;
+    background-color: #373f4a;
+    margin-top:40px;
+    border-bottom: 1px solid #5B616A;
+}
+#brand .brand{
+    height: 130px;
+    margin: 0 auto;
+}
+#brand .brand ul li{
+    float: left;
+    width: 280px;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+}
+#brand .brand ul li+li{
+    margin-left: 16px;
+}
+#brand .brand ul li img{
+    vertical-align: middle;
+}
+/*品牌质量结束*/
+
+/*脚注区域开始*/
+#footer{
+    width: 100%;
+    height: 320px;
+    background-color: #3A424D;
+    padding-top: 45px;
+    color: #D8D9DB;
+}
+#footer .wrapper{
+    width: 1200px;
+    height: 320px;
+    margin: 0 auto;
+}
+#footer .wrapper .info ul{
+    float: left;
+}
+#footer .wrapper .info ul+ul{
+    margin-left: 70px;
+    border-left: 1px solid #5B616A;
+    padding-left: 70px;
+}
+#footer .wrapper .info h3{
+    font-size: 16px;
+    color: #D8D9DB;
+    line-height: 50px;
+}
+#footer .wrapper .info .site li{
+    line-height: 36px;
+}
+#footer .wrapper .info .site li span.rap{
+    display: block;
+    height: 1px;
+    width: 350px;
+    margin: 30px 0;
+    background-color: #5B616A;
+}
+#footer .wrapper .info .contact{
+    width: 258px;
+}
+#footer .wrapper .info .contact li+li{
+    line-height: 36px;
+    border-bottom: 1px solid #5B616A;
+}
+#footer .wrapper .info .contact li span.tel{
+    margin-right: 30px;
+    float: left;
+}
+#footer .wrapper .info .contact li span.num{
+    display: block;
+    width: 250px;
+    text-align: right;
+}
+
+#footer .wrapper .info .enter{
+    width: 300px;
+}
+#footer .wrapper .info .enter li+li{
+    float: left;
+    line-height: 36px;
+    border-bottom: 1px solid #5B616A;
+}
+#footer .wrapper .info .enter li:nth-child(2n+1){
+    margin-left: 30px;
+}
+#footer .wrapper .info .enter li:first-child{
+    margin-left: 0;
+}
+#footer .wrapper .info .enter a{
+    display: block;
+    width: 60px;
+    height: 50px;
+    color: #D8D9DB;
+    line-height: 50px;
+    text-decoration: none;
+    float: left;
+}
+#footer .wrapper .info .enter a.top{
+    width: 50px;
+    font-size: 20px;
+    color: #00A72B;
+    text-align: right;
+    margin-left: 20px;
+}
+#footer .wrapper .info .enter a:hover{
+    color: #00A72B;
+}
+
+
+
+/*脚注区域结束*/
+
+/*图标字体开始*/
+@font-face {
+    font-family: 'dongsheng';
+    src: url('../font/iconfont.eot') format('embeded-opentype'),
+    url('../font/iconfont.svg') format('svg'),
+    url('../font/iconfont.ttf') format('ttf'),
+    url('../font/iconfont.woff') format('woff');
+}
+
+[class^="icon-"],[class*=" icon-"]{
+    font-family: dongsheng;
+    font-style: normal;
+}
+.icon-unie653::before{
+    content: '\e701';
+    font-size: 50px;
+    color: #8E8E8E;
+}
+.icon-unie653:hover{
+    color: #fff;
+}
+
+.icon-weixin-copy::before{
+    content: '\e65b';
+    font-size: 50px;
+    color: #8E8E8E;
+}
+.icon-weixin-copy:hover{
+    color: #fff;
+}
+
+/*图标字体结束*/

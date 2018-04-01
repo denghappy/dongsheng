@@ -1,0 +1,198 @@
+/*关于东盛*/
+
+/*banner开始*/
+body{
+    background: #F2F2F2;
+}
+#banner{
+} 
+#banner .banner-img{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#banner .banner-img img{
+    width: 100%;
+    height: 208px;
+}
+#banner .notice{
+    width: 1200px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    margin-top: -35px;
+}
+#banner .notice .title{
+    width: 200px;
+    height: 100px;
+    background-color: #333;
+    float: left;
+}
+#banner .notice .title::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #333;
+    margin-left: 200px;
+    margin-top: -25px;
+}
+#banner .notice .title span{
+    display: block;
+    color: #C1C1C1;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 24px;
+
+}
+#banner .notice .title h3{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+
+}
+
+#banner .notice .content{
+    height: 100px;
+    background-color: #00A72B;
+    padding: 30px 100px 30px 250px;
+    font-size: 12px;
+
+}
+#banner .notice .content .txt{
+    color: #fff;
+}
+#banner .notice .content .txt:hover{
+    color: #000;
+}
+#banner .notice .content .txt p{
+    line-height: 24px;
+}
+#banner .notice .content .btn{
+    width: 50px;
+}
+#banner .notice .content .btn .up{
+    position: absolute;
+    top: 20px;
+    right:30px;
+}
+#banner .notice .content .btn .down{
+    position: absolute;
+    bottom:20px;
+    right:30px;
+}
+
+/*banner结束*/
+
+/*公司简介开始*/
+#intro{
+    margin-top: 50px;
+}
+#intro .con{
+    width: 1200px;
+    height: 405px;
+    margin: 20px auto;
+    padding: 30px 0;
+    background-color: #fff;
+}
+#intro .con .con-img{
+    padding-top: 20px;
+}
+#intro .con .con-img img{
+    float: left;
+    margin-left: 20px;
+}
+#intro .con .m img{
+    margin-left: 22px;
+}
+#intro .con .con-txt{
+    width: 650px;
+    float: right;
+    margin-right: 20px;
+}
+#intro .con .con-txt h3{
+    font-size: 32px;
+    line-height: 50px;
+}
+#intro .con .con-txt span{
+    font-size: 14px;
+    line-height: 32px;
+    padding-left: 90px;
+}
+#intro .con .con-txt p{
+    font-size: 14px;
+    line-height: 28px;
+    text-indent: 2em;
+}
+/*公司简介结束*/
+
+/*企业优势开始*/
+#advantage{
+
+}
+#advantage .con{
+    margin-top: 20px;
+    height: 300px;
+}
+#advantage .con ul{}
+#advantage .con ul li{
+    width: 220px;
+    height: 235px;
+    background-color: #fff;
+    padding-top: 65px;
+    padding-left: 60px;
+    float: left;
+}
+#advantage .con ul li+li{
+    margin-left: 26px;
+}
+#advantage .con ul li p{
+    font-size: 12px;
+    line-height: 26px;
+    margin: 20px 0;
+}
+/*企业优势结束*/
+
+/*企业视频开始*/
+#video{
+    margin-top: 20px;
+}
+#video .con{
+    background-color: #fff;
+    margin-top: 20px;
+    width: 1200px;
+    height: 350px;
+}
+#video .con ul{
+    padding: 25px;
+}
+#video .con li{
+    float: left;
+    position: relative;
+}
+#video .con li+li{
+    margin-left: 35px;
+}
+#video .con li a{
+    display: block;
+}
+#video .con li a .mask{
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    transition: all 1s;
+}
+#video .con li a img{
+    width: 360px;
+    height: 300px;
+}
+#video .con li:hover a .mask{
+    opacity: 1;
+}
+/*企业视频结束*/

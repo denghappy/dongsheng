@@ -1,0 +1,132 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, form,  button, input, textarea, th, td,img { margin:0; padding:0; }
+body, button, input, select, textarea { font:14px/1 "微软雅黑",tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%;font-weight: 500;color:#000; }
+em, i { font-style:normal; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+img,input,button,select,textarea{ border:0;outline: none; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*公共样式*/
+.tit{
+    text-align: center;
+    border-bottom: 1px solid #c1c1c1;
+    position: relative;
+}
+.tit p{
+    font-size: 30px;
+    color: #01A728;
+}
+.tit h3{
+    font-size: 24px;
+    color: #3A424D;
+    line-height: 80px;
+}
+.tit .square{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #01A72B;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    margin-left: -15px;
+}
+/*大标题结束*/
+
+/*线条开始*/
+.line{
+    display: block;
+    width: 180px;
+    height: 1px;
+    background-color: #00A72B;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+/*线条结束*/
+/*文本溢出*/
+.inaline{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.intwoline{
+    display: -webkit-box !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+
+/*分页插件css*/
+@font-face {
+    font-family: 'iconfont';
+    src:url('../font/iconfont.eot?rretjt');
+    src:url('../font/iconfont.eot?#iefixrretjt') format('embedded-opentype'),
+    url('../font/iconfont.woff?rretjt') format('woff'),
+    url('../font/iconfont.ttf?rretjt') format('truetype'),
+    url('../font/iconfont.svg?rretjt#iconfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: iconfont;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.pagination>li>a, .pagination>li>span{
+    color: #00A72B;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover{
+    color: #FFF;
+    background-color: #00A72B;
+    border: 1px solid #00A72B;
+}

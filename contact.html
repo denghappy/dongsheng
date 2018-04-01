@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>联系我们</title>
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/header-footer.css">
+   <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+   <!--导航开始-->
+   <nav id="nav" class="nav">
+      <div class="navbar wrapper">
+         <a class="logo" href="#"><img src="images/logo_01.png" alt=""></a>
+         <ul>
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="about.html">关于东盛</a></li>
+            <li><a href="case.html">装修案例</a></li>
+            <li><a href="construction.html">在建工地</a></li>
+            <li><a href="news.html">新闻资讯</a></li>
+            <li><a href="designer.html">设计团队</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+         </ul>
+      </div>
+   </nav>
+   <!--导航结束-->
+   <!--banner开始-->
+   <section id="banner">
+      <div class="banner-img">
+         <img src="images/contact-banner.jpg" alt="">
+      </div>
+   </section>
+   <!--banner结束-->
+   <!--内容区域开始-->
+   <section id="contact">
+      <div class="tit">
+         <p>CONTACT US</p>
+         <h3>联系我们</h3>
+         <span class="square"></span>
+      </div>
+      <div class="site wrapper">您当前所在位置>首页>联系我们</div>
+      <div class="con wrapper">
+         <div class="con-img fl">
+            <img src="images/contact-picture.png" alt="">
+         </div>
+         <span class="zm fl"><img src="images/contact-dongsheng.png" alt=""></span>
+         <span class="txt fl">
+            <i class="square"></i>
+            <img src="images/contact-txt.png" alt="">
+         </span>
+         <ul class="tel fl">
+            <li>Service telephone：4000-899-170</li>
+            <li>Tel：022-83702946</li>
+            <li>Fax：022-83946895</li>
+            <li>Mobile phone：13821325545</li>
+            <li>Consulting QQ：2913765798</li>
+            <li>Email：xinlei_tw@126.com</li>
+            <li>Web site：http://www.dibijiaju.com</li>
+            <li>Address：郑州高新技术产业开发区华苑产业园华鼎智地5号楼1门四层</li>
+
+         </ul>
+         <div class="map" id="dituContent">
+            <!--<img class="bg" src="images/contact-map.jpg" alt="">
+            <img class="dw" src="images/contact-tag.png" alt="">-->
+            <div style="width:800px;height:500px;border:#ccc solid 1px;" ></div>
+         </div>
+      </div>
+
+   </section>
+   <!--内容区域结束-->
+   <!--品牌质量开始-->
+   <section id="brand">
+      <div class="brand wrapper">
+         <ul>
+            <li><img src="images/brand_01.png" alt=""></li>
+            <li><img src="images/brand_02.png" alt=""></li>
+            <li><img src="images/brand_03.png" alt=""></li>
+            <li><img src="images/brand_04.png" alt=""></li>
+         </ul>
+      </div>
+   </section>
+   <!--品牌质量结束-->
+   <!--脚注区域开始-->
+   <footer id="footer">
+      <div class="wrapper">
+         <div class="info clearfix">
+
+            <ul class="site">
+               <li><h3>网站信息</h3></li>
+               <li>Copyright©2018 郑州东盛互联网家装有限公司 版权所有</li>
+               <li>备案号：豫ICP备16007366号</li>
+               <li>技术支持：郑州福务达软件科技有限公司</li>
+               <li><span class="rap"></span></li>
+               <li>在以下网站关注我们：
+                  <a href="javascript:;"><i class="icon-unie653"></i></a>
+                  <a href="javascript:;"><i class="icon-weixin-copy"></i></a>
+               </li>
+            </ul>
+            <ul class="contact">
+               <li><h3>联系我们</h3></li>
+               <li>
+                  <span class="tel">电话：</span>
+                  <span class="num">400-886-9975</span>
+               </li>
+               <li>
+                  <span class="tel">传真：</span>
+                  <span class="num">（86）235 4521 3242</span>
+               </li>
+               <li>
+                  <span class="tel">网址：</span>
+                  <span class="num">www.zzfwd.cn</span>
+               </li>
+               <li>
+                  <span class="tel">地址：</span>
+                  <span class="num">郑州市绿地财富中心A-1617</span>
+               </li>
+            </ul>
+            <ul class="enter">
+               <li><h3>快速进入</h3></li>
+               <li><a href="index.html">回到顶部</a><a class="top" href="index.html">→</a></li>
+               <li><a href="about.html">关于东盛</a><a class="top" href="about.html">→</a></li>
+               <li><a href="case.html">工程案例</a><a class="top" href="case.html">→</a></li>
+               <li><a href="news.html">新闻资讯</a><a class="top" href="news.html">→</a></li>
+               <li><a href="construction.html">施工现场</a><a class="top" href="construction.html">→</a></li>
+               <li><a href="contact.html">联系我们</a><a class="top" href="contact.html">→</a></li>
+            </ul>
+         </div>
+
+      </div>
+   </footer>
+   <!--脚注区域结束-->
+<script src="js/jquery.1.11.3.min.js"></script>
+<script src="js/main.js"></script>
+   <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+   <script type="text/javascript">
+      //创建和初始化地图函数：
+      function initMap(){
+         createMap();//创建地图
+         setMapEvent();//设置地图事件
+         addMapControl();//向地图添加控件
+         addMarker();//向地图中添加marker
+      }
+
+      //创建地图函数：
+      function createMap(){
+         var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+         var point = new BMap.Point(113.572325,34.819234);//定义一个中心点坐标
+         map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+         window.map = map;//将map变量存储在全局
+      }
+
+      //地图事件设置函数：
+      function setMapEvent(){
+         map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+         map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+         map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+         map.enableKeyboard();//启用键盘上下左右键移动地图
+      }
+
+      //地图控件添加函数：
+      function addMapControl(){
+         //向地图中添加缩放控件
+         var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+         map.addControl(ctrl_nav);
+         //向地图中添加缩略图控件
+         var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+         map.addControl(ctrl_ove);
+         //向地图中添加比例尺控件
+         var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+         map.addControl(ctrl_sca);
+      }
+
+      //标注点数组
+      var markerArr = [{title:"郑州福务达软件科技有限公司",content:"我的备注",point:"113.57219|34.819427",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+      ];
+      //创建marker
+      function addMarker(){
+         for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+               borderColor:"#808080",
+               color:"#333",
+               cursor:"pointer"
+            });
+
+            (function(){
+               var index = i;
+               var _iw = createInfoWindow(i);
+               var _marker = marker;
+               _marker.addEventListener("click",function(){
+                  this.openInfoWindow(_iw);
+               });
+               _iw.addEventListener("open",function(){
+                  _marker.getLabel().hide();
+               })
+               _iw.addEventListener("close",function(){
+                  _marker.getLabel().show();
+               })
+               label.addEventListener("click",function(){
+                  _marker.openInfoWindow(_iw);
+               })
+               if(!!json.isOpen){
+                  label.hide();
+                  _marker.openInfoWindow(_iw);
+               }
+            })()
+         }
+      }
+      //创建InfoWindow
+      function createInfoWindow(i){
+         var json = markerArr[i];
+         var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+         return iw;
+      }
+      //创建一个Icon
+      function createIcon(json){
+         var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+         return icon;
+      }
+
+      initMap();//创建和初始化地图
+   </script>
+</body>
+</html>
