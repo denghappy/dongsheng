@@ -69,12 +69,14 @@
     height: 80px;
     background-color: #000;
     overflow: hidden;
+    margin: 0 auto;
+    padding: 0 110px;
 }
-#nav .navbar{
+/*#nav .navbar{
     width: 1020px;
     height: 80px;
     margin: 0 auto;
-}
+}*/
 #nav .navbar .logo{
     display: block;
     width: 145px;
@@ -84,6 +86,7 @@
     margin-right: 35px;
 }
 #nav .navbar ul{
+    width:840px;
     margin: 0 auto;
 }
 #nav .navbar ul li{
@@ -111,12 +114,31 @@
 /*导航结束*/
 
 /*banner开始*/
-#banner .banner{
-    width: 100%;
+.main_image {width:100%; height:422px; border-top:1px solid #d7d7d7; overflow:hidden; margin:0 auto; position:relative}
+.main_image ul {width:9999px; height:422px; overflow:hidden; position:absolute; top:0; left:0}
+.main_image li {float:left; width:100%; height:422px;}
+.main_image li span {display:block; width:100%; height:422px}
+.main_image li a {display:block; width:100%; height:422px}
+.main_image li .img_1 {background: url('../images/banner_01.png') center top no-repeat}
+.main_image li .img_2 {background: url('../images/banner_02.png') center top no-repeat}
+.main_image li .img_3 {background: url('../images/banner_03.png') center top no-repeat}
+div.flicking_con {width:990px; margin:0 auto; position:relative}
+div.flicking_con .flicking_inner {position:absolute; top:360px; left:50%;margin-left:-52px;z-index:10000; width:100%; height:21px}
+div.flicking_con a {float:left; width:21px; height:21px; margin:0; padding:0; background:url('../images/btn_main_img.png') 0 0 no-repeat; display:block; text-indent:-1000px}
+div.flicking_con a.on {background-position:0 -21px}
+#btn_prev,#btn_next{z-index:10000;position:absolute;display:block;width:73px!important;height:74px!important;top:50%;margin-top:-37px;display:none;}
+#btn_prev{background:url(../images/hover_left.png) no-repeat left top;left:100px;}
+#btn_next{background:url(../images/hover_right.png) no-repeat right top;right:100px;}
+
+/*#banner{
+    width:1200px;
+}*/
+/* #banner .banner{
+    width: 1200px;
     height: 620px;
     position: relative;
-    overflow: hidden;
     min-width: 1200px;
+    overflow: hidden;
 }
 #banner .banner .banner-img{
     width: 7680px;
@@ -178,8 +200,8 @@
     top:50%;
     right: 0;
     margin-top: -40px;
-}
-    /*banner结束*/
+} */
+/*banner结束*/
 
 /*装修案例开始*/
 #case{
@@ -502,14 +524,16 @@
 
 /*新闻资讯开始*/
 #news{
+    width: 1100px;
     height: 600px;
-    width: 100%;
     background-color: #333;
-    padding-top: 65px;
+    padding: 65px 50px 0 50px;
+    margin: 0 auto
 }
 #news .tit h3{
     color: #fff;
-}#news .con{
+}
+#news .con{
     width: 1200px;
     margin: 50px auto;
  }
@@ -563,11 +587,11 @@
 }
 
 #news .con .right{
-    width: 662px;
+    /*width: 662px;*/
 }
 
 #news .con .right ul li{
-    width: 662px;
+    width: 580px;
     height: 110px;
 }
 #news .con .right ul li:nth-child(n+2){
@@ -670,7 +694,7 @@
     text-align: left;
 }
 #company .profile .tit hr{
-    width: 872px;
+    width: 800px;
 }
 #company .profile .pic{
     display: block;
@@ -709,7 +733,7 @@
     font-size: 14px;
     text-indent: 2em;
     line-height: 28px;
-    width: 620px;
+    width: 610px;
     position: absolute;
     left: 608px;
     top:280px;
@@ -1055,5 +1079,7 @@
 /*图标字体结束*/
 
 
-
+*{
+    /*border: 1px solid red;*/
+}
 

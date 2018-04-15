@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
    <title>东盛首页</title>
    <!--[if lt IE 9]-->
    <script src="lib/html5shiv/html5shiv.min.js"></script>
@@ -29,7 +30,7 @@
    <!--导航结束-->
    <!--轮播图开始-->
    <section id="banner">
-      <div class="banner">
+      <!-- <div class="banner">
          <ul class="banner-img">
             <li><a href="javascript:;"><img src="images/banner_01.png" alt=""></a></li>
             <li><a href="javascript:;"><img src="images/banner_02.png" alt=""></a></li>
@@ -43,12 +44,30 @@
          </ul>
          <div class="prev"></div>
          <div class="next"></div>
+      </div> -->
+      <div class="main_visual">
+         <div class="flicking_con">
+            <div class="flicking_inner">
+               <a href="#">1</a>
+               <a href="#">2</a>
+               <a href="#">3</a>
+            </div>
+         </div>
+         <div class="main_image">
+            <ul>              
+               <li><span class="img_1"></span></li>
+               <li><span class="img_2"></span></li>
+               <li><span class="img_3"></span></li>
+            </ul>
+               <a href="javascript:;" id="btn_prev"></a>
+               <a href="javascript:;" id="btn_next"></a>
+         </div>
       </div>
    </section>
    <!--轮播图结束-->
    <!--装修案例开始-->
    <section id="case">
-      <div class="case ">
+      <div class="case wrapper">
          <div class="tit">
             <p>ENGINEERING CASE</p>
             <h3>装修案例</h3>
@@ -195,7 +214,7 @@
             <h3>新闻资讯</h3>
             <span class="square"></span>
          </div>
-         <div class="con">
+         <div class="con clearfix">
             <div class="left fl">
                <div class="txt">
                   <span>这样的美<br>足够让你垂涎三尺</span>
@@ -427,6 +446,7 @@
    <!--脚注区域结束-->
    <script src="js/jquery.1.11.3.min.js"></script>
    <script src="js/jquery.bxslider.js"></script>
+   <script src="js/jquery.touchSlider.js"></script>
    <script src="js/template.js"></script>
    <script src="js/mine.js"></script>
    <script src="js/main.js"></script>
@@ -445,7 +465,7 @@
       });
    </script>
    <script id="artTemplate" type="text/html">
-      <ul>
+      <ul class="clearfix">
          {{each infos}}
             <li>
                <div class="item">
